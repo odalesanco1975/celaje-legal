@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Celaje · Política de privacidad</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2433; --muted:#5b6475; --line:#e3e6ec; --accent:#3d4fa8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1424; --fg:#e8ebf2; --muted:#a3abbd; --line:#252d45; --accent:#9fb0ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.7rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  .fecha { color:var(--muted); margin:0 0 24px; }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:8px 6px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--accent); }
+  .resumen { background:color-mix(in srgb, var(--accent) 10%, transparent); border-radius:12px; padding:12px 16px; }
+  .resumen ul { margin:4px 0; padding-left:20px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad de Celaje</h1>
+<p class="fecha">Última actualización: 5 de noviembre de 2026</p>
+
+<div class="resumen">
+<strong>En resumen</strong>
+<ul>
+  <li>Celaje no tiene cuentas de usuario ni herramientas de analítica o seguimiento. Por ahora no muestra publicidad (ver apartado 10).</li>
+  <li>Para darte la previsión, la app envía la ubicación (coordenadas) de los lugares que consultas a los servicios meteorológicos que se indican abajo. No se envía tu nombre ni ningún identificador tuyo.</li>
+  <li>Tus ciudades, preferencias, alertas y widgets se guardan solo en tu móvil.</li>
+  <li>No vendemos ni cedemos datos a nadie.</li>
+</ul>
+</div>
+
+<h2>1. Responsable</h2>
+<p>Responsable del tratamiento: <strong>Óscar Díaz</strong><br>
+Contacto: <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a></p>
+
+<h2>2. Qué datos se usan y para qué</h2>
+<table>
+  <tr><th>Dato</th><th>Para qué</th><th>Dónde va</th></tr>
+  <tr><td>Ubicación del móvil (aproximada o precisa, solo si das permiso)</td>
+      <td>Mostrar el tiempo, los avisos, las playas, la lluvia, el aire y los planes del lugar donde estás.</td>
+      <td>Se usa en el móvil. Las coordenadas se envían a los servicios del apartado 3, nunca junto a tu nombre ni a un identificador.</td></tr>
+  <tr><td>Lugares que buscas o guardas</td>
+      <td>Buscar ciudades y mostrar su previsión.</td>
+      <td>Se guardan en el móvil. El texto que escribes en el buscador lo procesa el servicio de geocodificación de tu Android (Google).</td></tr>
+  <tr><td>Preferencias (pestañas, tarjetas, alertas, widgets, actividades)</td>
+      <td>Recordar cómo quieres usar la app.</td>
+      <td>Solo en el móvil.</td></tr>
+  <tr><td>Dirección IP</td>
+      <td>Es técnicamente necesaria para cualquier conexión a internet.</td>
+      <td>La reciben los servidores a los que se conecta la app. Nuestro servidor no la guarda.</td></tr>
+</table>
+<p>Las notificaciones (lluvia, tormentas, avisos oficiales…) se calculan en el propio móvil con la última ubicación guardada. La app no consulta tu ubicación en segundo plano.</p>
+
+<h2>3. Servicios a los que se conecta la app</h2>
+<table>
+  <tr><th>Servicio</th><th>Qué recibe</th><th>Privacidad</th></tr>
+  <tr><td>Servidor de Celaje (Cloudflare Workers, Cloudflare Inc.)</td>
+      <td>Coordenadas redondeadas (entre ~100 m y ~10 km según el dato), código del municipio o de la playa consultada. Sirve la previsión de MET Norway, los datos de AEMET, olas y mareas, radar, mapas, satélite, aire y polen, lluvia observada, planes cerca y las rutas de «Viaje» (los puntos de salida, paradas y llegada, redondeados a ~200 m; las rutas se guardan 30 días, sin saber quién las pidió, para no volver a calcularlas).</td>
+      <td>No guardamos IPs ni registros de quién consulta. Cloudflare actúa como encargado del tratamiento: <a href="https://www.cloudflare.com/privacypolicy/">política de Cloudflare</a>.</td></tr>
+  <tr><td>MET Norway (Instituto Meteorológico de Noruega)</td>
+      <td>Coordenadas con 3 decimales (~100 m) del lugar consultado, normalmente enviadas por nuestro servidor (entonces no recibe tu IP ni ningún dato del móvil). Solo si nuestro servidor no responde, la app las envía directamente.</td>
+      <td><a href="https://www.met.no/en/About-us/privacy">política de MET Norway</a></td></tr>
+  <tr><td>openrouteservice (HeiGIT gGmbH, Heidelberg, Alemania), solo si usas «Viaje»</td>
+      <td>Los puntos de la ruta redondeados a ~200 m, enviados por nuestro servidor: no recibe tu IP ni ningún dato del móvil.</td>
+      <td><a href="https://account.heigit.org/info/tos">condiciones de HeiGIT</a></td></tr>
+  <tr><td>Geocodificador de Android (Google)</td>
+      <td>El texto que buscas y, para poner nombre a tu ubicación, sus coordenadas.</td>
+      <td><a href="https://policies.google.com/privacy">política de Google</a></td></tr>
+  <tr><td>Canales de noticias oficiales de ayuntamientos, diputaciones y gobiernos autonómicos («Noticias cerca»)</td>
+      <td>Solo la petición del canal de noticias (como cuando abres una web). La app no les envía tu ubicación: elige en el móvil qué canales corresponden a tu zona.</td>
+      <td>La política de privacidad de cada organismo (se indica en cada noticia).</td></tr>
+</table>
+<p>Si abres un enlace externo (por ejemplo, la web de un evento en «Planes cerca» o una noticia), se abrirá en tu navegador y se aplicará la política de esa web.</p>
+
+<h2>4. Base legal</h2>
+<p>Tratamos la ubicación porque tú nos das tu consentimiento al conceder el permiso de ubicación (art. 6.1.a del RGPD). Puedes retirarlo en cualquier momento desde los ajustes de Android; la app seguirá funcionando con las ciudades que elijas a mano. El resto de datos técnicos se tratan para prestarte el servicio que pides (art. 6.1.b).</p>
+
+<h2>5. Conservación</h2>
+<p>Los datos guardados en tu móvil se conservan hasta que los borres o desinstales la app. Nuestro servidor solo guarda en caché, durante unas horas, las respuestas meteorológicas de cada zona, sin relación con ninguna persona.</p>
+
+<h2>6. Transferencias internacionales</h2>
+<p>Cloudflare y Google pueden tratar datos fuera del Espacio Económico Europeo. Ambas empresas están adheridas al Marco de Privacidad de Datos UE-EE. UU. y aplican cláusulas contractuales tipo de la Comisión Europea. MET Norway está en Noruega, dentro del Espacio Económico Europeo.</p>
+
+<h2>7. Tus derechos</h2>
+<p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a>. Como no guardamos datos que te identifiquen, normalmente no tendremos nada tuyo, pero te responderemos igualmente. Si no estás conforme, puedes reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2 id="borrar-datos">8. Cómo borrar tus datos de Celaje</h2>
+<p>Celaje (desarrollador: Óscar Díaz) no tiene cuentas de usuario ni guarda en su servidor datos que te identifiquen, así que casi todo lo que hay está en tu móvil y lo controlas tú:</p>
+<ol>
+  <li><strong>Datos del móvil</strong> (ciudades, preferencias, alertas, widgets, última ubicación guardada): en Android, ve a <em>Ajustes → Aplicaciones → Celaje → Almacenamiento → Borrar datos</em>, o desinstala la app. Se borran al momento y por completo.</li>
+  <li><strong>Datos en nuestro servidor:</strong> no guardamos tu ubicación ligada a ti ni tu IP. Solo se conservan en caché las respuestas meteorológicas de cada zona (no de cada persona) durante unas horas, y se borran solas.</li>
+  <li><strong>Solicitud por correo:</strong> si quieres confirmarlo o pedir el borrado de cualquier dato, escribe a <a href="mailto:celaje.app@gmail.com?subject=Borrar%20mis%20datos%20de%20Celaje">celaje.app@gmail.com</a> con el asunto «Borrar mis datos de Celaje». Te responderemos en un plazo máximo de 30 días.</li>
+</ol>
+<p>Las coordenadas que la app envía a MET Norway y al geocodificador de Android (Google) para darte la previsión las conservan esos servicios según sus propias políticas (enlazadas en el apartado 3); no van unidas a tu nombre ni a ningún identificador nuestro.</p>
+
+<h2>9. Menores</h2>
+<p>Celaje no está dirigida a menores de 14 años. En cualquier caso, la app no pide ni guarda datos que identifiquen a quien la usa, tenga la edad que tenga: no hay cuentas, ni nombre, ni edad, ni correo.</p>
+
+<h2>10. Cambios</h2>
+<p>Si la app cambia lo que hace con los datos, actualizaremos esta página y la fecha de arriba. En particular, Celaje podrá incluir publicidad en el futuro para financiarse; en ese caso explicaremos aquí qué datos usa el proveedor de anuncios y, cuando la ley lo exija, te pediremos el consentimiento en la app antes de mostrarlos.</p>
+</main>
+</body>
+</html>
