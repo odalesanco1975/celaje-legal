@@ -24,7 +24,7 @@
 <body>
 <main>
 <h1>Política de privacidad de Celaje</h1>
-<p class="fecha">Última actualización: 9 de noviembre de 2026</p>
+<p class="fecha">Última actualización: 17 de noviembre de 2026</p>
 
 <div class="resumen">
 <strong>En resumen</strong>
@@ -49,9 +49,12 @@ Contacto: <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a></p>
   <tr><td>Lugares que buscas o guardas</td>
       <td>Buscar ciudades y mostrar su previsión.</td>
       <td>Se guardan en el móvil. El texto que escribes en el buscador lo procesa el servicio de geocodificación de tu Android (Google).</td></tr>
-  <tr><td>Preferencias (pestañas, tarjetas, alertas, widgets, actividades)</td>
+  <tr><td>Preferencias (pestañas, tarjetas, alertas, widgets, actividades, «Mis planes», cámaras favoritas)</td>
       <td>Recordar cómo quieres usar la app.</td>
       <td>Solo en el móvil.</td></tr>
+  <tr><td>Imágenes que compartes (botón de compartir de una tarjeta o del tiempo)</td>
+      <td>Enviar una captura del tiempo a quien tú quieras.</td>
+      <td>Se crea en el móvil y solo va a la app que elijas en el menú de compartir de Android (WhatsApp, correo…). Nosotros no la recibimos.</td></tr>
   <tr><td>Imagen de la cámara (solo si pulsas «📷 Cámara» en el mapa del cielo y das permiso)</td>
       <td>Ver las estrellas, los planetas y sus nombres dibujados encima de la imagen del cielo.</td>
       <td>Solo se muestra en la pantalla mientras el botón está activado: no se graba, no se guarda y no sale del móvil.</td></tr>
@@ -65,7 +68,7 @@ Contacto: <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a></p>
 <table>
   <tr><th>Servicio</th><th>Qué recibe</th><th>Privacidad</th></tr>
   <tr><td>Servidor de Celaje (Cloudflare Workers, Cloudflare Inc.)</td>
-      <td>Coordenadas redondeadas (entre ~100 m y ~10 km según el dato), código del municipio o de la playa consultada. Sirve la previsión de MET Norway, los datos de AEMET, olas y mareas, radar, mapas, satélite, aire y polen, lluvia observada, planes cerca y las rutas de «Viaje» (los puntos de salida, paradas y llegada, redondeados a ~200 m; las rutas se guardan 30 días, sin saber quién las pidió, para no volver a calcularlas).</td>
+      <td>Coordenadas redondeadas (entre ~100 m y ~10 km según el dato), código del municipio o de la playa consultada. Sirve la previsión de MET Norway, los datos de AEMET, olas y mareas, radar, mapas, satélite, aire y polen, lluvia observada, planes cerca, las cámaras cercanas (coordenadas redondeadas a ~1 km) y las rutas de «Viaje» (los puntos de salida, paradas y llegada, redondeados a ~200 m; las rutas se guardan 30 días, sin saber quién las pidió, para no volver a calcularlas).</td>
       <td>No guardamos IPs ni registros de quién consulta. Cloudflare actúa como encargado del tratamiento: <a href="https://www.cloudflare.com/privacypolicy/">política de Cloudflare</a>.</td></tr>
   <tr><td>MET Norway (Instituto Meteorológico de Noruega)</td>
       <td>Coordenadas con 3 decimales (~100 m) del lugar consultado, normalmente enviadas por nuestro servidor (entonces no recibe tu IP ni ningún dato del móvil). Solo si nuestro servidor no responde, la app las envía directamente.</td>
@@ -75,6 +78,15 @@ Contacto: <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a></p>
       <td><a href="https://account.heigit.org/info/tos">condiciones de HeiGIT</a></td></tr>
   <tr><td>Geocodificador de Android (Google)</td>
       <td>El texto que buscas y, para poner nombre a tu ubicación, sus coordenadas.</td>
+      <td><a href="https://policies.google.com/privacy">política de Google</a></td></tr>
+  <tr><td>Windy.com (Windyty, SE, Praga, República Checa), solo si ves cámaras</td>
+      <td>Nuestro servidor le pide la lista de cámaras de una zona con coordenadas redondeadas a ~1 km (no recibe tu IP ni ningún dato del móvil). Las imágenes y el reproductor de vídeo (timelapse) de cada cámara se cargan directamente desde los servidores de Windy, así que Windy recibe tu dirección IP y los datos técnicos habituales de cualquier web (tipo de navegador, idioma). El reproductor es de Windy y puede usar sus propias cookies o mostrar su publicidad.</td>
+      <td><a href="https://account.windy.com/agreements/windy-privacy-policy">política de Windy</a></td></tr>
+  <tr><td>Cámaras de tráfico de organismos públicos: Dirección General de Tráfico (DGT), Ayuntamiento de Madrid, Gobierno Vasco, Diputación Foral de Bizkaia y Ayuntamiento de Vitoria-Gasteiz; solo si ves sus cámaras</td>
+      <td>Solo la petición de la imagen de la cámara (como cuando abres una web), con tu dirección IP. No se les envía tu ubicación. Las cámaras de MeteoGalicia y del Concello de Vigo se piden a través de nuestro servidor: esos organismos no reciben tu IP.</td>
+      <td>La política de privacidad de cada organismo, en su web.</td></tr>
+  <tr><td>Google Play, solo en la versión instalada desde Google Play</td>
+      <td>De vez en cuando la app puede pedir a Google Play que te muestre su ventana para valorar Celaje. La ventana y tu valoración las gestiona Google Play con tu cuenta de Google; nosotros no sabemos si la has visto ni qué has puesto, salvo lo que publiques como reseña.</td>
       <td><a href="https://policies.google.com/privacy">política de Google</a></td></tr>
   <tr><td>Canales de noticias oficiales de ayuntamientos, diputaciones y gobiernos autonómicos («Noticias cerca»)</td>
       <td>Solo la petición del canal de noticias (como cuando abres una web). La app no les envía tu ubicación: elige en el móvil qué canales corresponden a tu zona.</td>
@@ -89,7 +101,7 @@ Contacto: <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a></p>
 <p>Los datos guardados en tu móvil se conservan hasta que los borres o desinstales la app. Nuestro servidor solo guarda en caché, durante unas horas, las respuestas meteorológicas de cada zona, sin relación con ninguna persona.</p>
 
 <h2>6. Transferencias internacionales</h2>
-<p>Cloudflare y Google pueden tratar datos fuera del Espacio Económico Europeo. Ambas empresas están adheridas al Marco de Privacidad de Datos UE-EE. UU. y aplican cláusulas contractuales tipo de la Comisión Europea. MET Norway está en Noruega, dentro del Espacio Económico Europeo.</p>
+<p>Cloudflare y Google pueden tratar datos fuera del Espacio Económico Europeo. Ambas empresas están adheridas al Marco de Privacidad de Datos UE-EE. UU. y aplican cláusulas contractuales tipo de la Comisión Europea. MET Norway está en Noruega y Windy en la República Checa, dentro del Espacio Económico Europeo.</p>
 
 <h2>7. Tus derechos</h2>
 <p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a>. Como no guardamos datos que te identifiquen, normalmente no tendremos nada tuyo, pero te responderemos igualmente. Si no estás conforme, puedes reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
@@ -101,7 +113,7 @@ Contacto: <a href="mailto:celaje.app@gmail.com">celaje.app@gmail.com</a></p>
   <li><strong>Datos en nuestro servidor:</strong> no guardamos tu ubicación ligada a ti ni tu IP. Solo se conservan en caché las respuestas meteorológicas de cada zona (no de cada persona) durante unas horas, y se borran solas.</li>
   <li><strong>Solicitud por correo:</strong> si quieres confirmarlo o pedir el borrado de cualquier dato, escribe a <a href="mailto:celaje.app@gmail.com?subject=Borrar%20mis%20datos%20de%20Celaje">celaje.app@gmail.com</a> con el asunto «Borrar mis datos de Celaje». Te responderemos en un plazo máximo de 30 días.</li>
 </ol>
-<p>Las coordenadas que la app envía a MET Norway y al geocodificador de Android (Google) para darte la previsión las conservan esos servicios según sus propias políticas (enlazadas en el apartado 3); no van unidas a tu nombre ni a ningún identificador nuestro.</p>
+<p>Las coordenadas que la app envía a MET Norway y al geocodificador de Android (Google) para darte la previsión, y la IP con la que se cargan las imágenes de las cámaras (Windy y organismos públicos), las conservan esos servicios según sus propias políticas (enlazadas en el apartado 3); no van unidas a tu nombre ni a ningún identificador nuestro.</p>
 
 <h2>9. Menores</h2>
 <p>Celaje no está dirigida a menores de 14 años. En cualquier caso, la app no pide ni guarda datos que identifiquen a quien la usa, tenga la edad que tenga: no hay cuentas, ni nombre, ni edad, ni correo.</p>
